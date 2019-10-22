@@ -16,36 +16,6 @@ sup { vertical-align: text-top; }
 
 sub { vertical-align: text-bottom; }
 
-table
-{
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-caption, th, td
-{
-	text-align: left;
-	vertical-align: top;
-	font-weight: normal;
-}
-
-input, textarea, select
-{
-	font-size: 110%;
-	line-height: 1.1;
-}
-
-abbr, acronym
-{
-	border-bottom: .1em dotted;
-	cursor: help;
-}
-
-
-#image
-{
-    width: 100%;
-}
 
 #logo {
     float: left;
@@ -72,10 +42,6 @@ abbr, acronym
     padding-right:20px;
     position:relative;
  }
-
-#contentsection {
-    margin: 0 auto;
-}
 
 #page-wrap {
      margin: 0 auto;
@@ -124,7 +90,7 @@ h4 {
 p {
     text-align:left;
     font-size:17px;
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.4em;
     padding:0px;
     padding-bottom:20px;
@@ -140,7 +106,7 @@ nav a {
         color:#3a3a3a;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
-       text-transform:uppercase;
+        text-transform:uppercase;
         font-size:12px;
         letter-spacing: 2px;
         font-weight:bold;
@@ -152,14 +118,37 @@ body {
 }
 
 #home .module {
-  background-image:url("../images/turtle.jpg");
+  background-image:url("https://s3.amazonaws.com/filestore.rescuegroups.org/8569/pictures/animals/14696/14696131/67543922_500x378.jpg");
   background-size: cover;
-  width: 100%;
+  width: 50%;
   height: 500px;
   position: relative;
-  float: left;
-    display:block;
+  float: right;
+  margin-top: 2%;
+  margin-right: 20px;
+
 }
+
+
+#contentsection1 {
+    background-color: yellow;
+    width: 44.5%;
+    float: right;
+    margin-top: 8%;
+    margin-right: 0px;
+}
+
+#container{
+    background-color: pink;
+}
+#container1{
+    background-color: pink;
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
 
 #about .module {
   background-image:url("../images/paddler.jpg");
@@ -181,16 +170,12 @@ body {
     display:block;
 }
 
- .module {
-  background-image:url("../images/turtle.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  position: relative;
-  float: left;
-    display:block;
-}
 
+.header{
+    padding-bottom: 11vh;
+    background-color: burlywood;
+    position: relative;
+}
 .mid h1 {
   font-family: 'Francois One', sans-serif;
     font-size:55px;
@@ -220,32 +205,6 @@ footer p {
     font-size:15px;
 }
 
-#reservationsection {
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("../images/paddler.jpg");
-    background-size: cover;
-    width:80%;
-    margin: 0 auto;
-    height:300px;
-}
-
-#reservationsection p {
-    padding-top:20px;
-    font-size:20px;
-    letter-spacing:1px;
-    color:white;
-    font-weight:bold;
-}
-
-#reservationsection h2 {
-    padding-top:35px;
-    color:white;
-}
-
 button {
   display: block;
   margin-left:auto;
@@ -263,21 +222,6 @@ button:focus {
   outline: none;
 }
 
-
-
-hr {
-    width: 80%;
-    height: 2px;
-    background-color:#cccccc;
-    color:#cccccc;
-    border: 0 none;
-    margin: 5px auto;
-}
-
-#testimonialsection p {
-    font-size:22px;
-    padding:10px;
-    }
 
 .footer-social { 
     float: right; 
