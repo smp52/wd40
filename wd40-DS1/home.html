@@ -2,12 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>The Paddling Center | at Shingle Creek</title>
+	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
 	<link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 <body id="home">
@@ -30,38 +31,56 @@
         </nav>
 
    </div>
-    
-    <div id="container">
+
+
+  <div id="container">
+
+
         <div class="module mid">
             <h1></h1>
         </div>
+
+       <div id="contentsection1">
+		<div id="adoptSection">
+            <h2>Adopt Today</h2>
+            <p>Located in the headwaters to the Everglades. The Paddling Center at Shingle Creek is located conveniently next to the attraction area just off US192. Experiences we offer include single and tandem kayaks, canoes, large stable paddle boards (SUP), biking, camping, and educational tours on a duffy 18 ft electric boat. </p>
+            <button class="button_blue">Adopt Today</button>
+            <br>
+		</div>
+      </div>
     </div>
 
-	<div id="contentsection">
-		<div id="experienceSection">
-            <h2>TOURS/GEAR/FUN</h2>
-            <p>Located in the headwaters to the Everglades. The Paddling Center at Shingle Creek is located conveniently next to the attraction area just off US192. Experiences we offer include single and tandem kayaks, canoes, large stable paddle boards (SUP), biking, camping, and educational tours on a duffy 18 ft electric boat. </p>
-		</div>
-		
-		<hr>
-		
-		<div id="testimonialsection">
-		<p>"This is a place that requires everyone to experience once in their life. Simply stunning how calm and peaceful this environment is. The facilities are clean and the staff is beyond professional. A must see!"</p>
-		</div>
-		
-		<hr>
-		
-		<div id="reservationsection">
-            <h2>RESERVATIONS</h2>
+
+
+      <br>
+      <br>
+      <br>
+       <div id="container1">
+		<div id="contentsection2">
+		<div id="featuredCats">
+            <h2>Cat of the Month</h2>
             <p>Equipment can go fast, don't get left on the shore! Book your kayak, canoe, paddle board, or tour experience today!</p>
 		    <section class="flat">
                 <button class="button_blue">Make a Reservation Now</button>
             
             </section>
 		</div>
+
+
 	</div>
-
-
+      </div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://picsum.photos/200/100" style="width:100%">
+  <img class="mySlides" src="https://picsum.photos/200/200" style="width:100%">
+  <img class="mySlides" src="https://picsum.photos/200/300" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
 
 <footer>
     <div class="footer-social">
@@ -75,7 +94,36 @@
     <p>This site is not official and is an assignment for a UCF Digital Media course | Copyright 2015 The Paddling Center</p> 
 	
 </footer>
+
 		
 </div>
 </body>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
 </html>
