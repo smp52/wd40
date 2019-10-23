@@ -199,7 +199,8 @@ body {
 footer {
     height: 80px;
     background-color: white;
-    display: none;
+    position: static;
+    bottom: 0%;
 }
 
 footer p {
@@ -386,6 +387,10 @@ ul {
 	background-color: #414040;
 	border: 3px solid #414040;
 }
+.donationform{
+    position: relative;
+    display: inline-block;
+}
 .adonationform{
     width: 45%;
     float: left;
@@ -422,13 +427,29 @@ ul {
 
 .otherdonate .donateimgz{
     background-color: dodgerblue;
-    width: 170px;
     float: left;
-    margin-left: 0px;
+    margin-left: 0%;
     margin-top: 0%;
     display: inline-flex;
-    padding: none;
+}
 
+.otherdonate #container{
+    background-color: yellowgreen;
+    overflow: hidden;
+    margin-bottom: 0px;
+    height: auto;
+}
+
+.otherdonate .donateimgz img{
+    width: 205px;
+    margin: 2%;
+}
+.otherdonate .donateimgz h3{
+    margin: 2%;
+    width: 205px;
+    line-height: 1.5em;
+    margin-top: -24%;
+    text-align: center;
 }
 input {
     margin-left: auto;
