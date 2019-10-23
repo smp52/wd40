@@ -8,7 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
 <body id="home">
@@ -61,7 +61,6 @@
             <h2>Cat of the Month</h2>
             <p>Equipment can go fast, don't get left on the shore! Book your kayak, canoe, paddle board, or tour experience today!</p>
 		    <section class="flat">
-                <button class="button_blue">Make a Reservation Now</button>
             
             </section>
 		</div>
@@ -69,18 +68,50 @@
 
 	</div>
       </div>
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="https://picsum.photos/200/100" style="width:100%">
-  <img class="mySlides" src="https://picsum.photos/200/200" style="width:100%">
-  <img class="mySlides" src="https://picsum.photos/200/300" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+<div class="slideshow-container">
+<div class="slideshow-inner">
+  <div class="mySlides fade">
+
+    <img  src='https://picsum.photos/200/100' alt="sally lightfoot crab"/>
+    <div class="text">Sally Lightfoot Crab</div>
   </div>
+
+  <div class="mySlides fade">
+
+    <img  src='https://picsum.photos/200/102' alt="fighting nazca boobies"/>
+    <div class="text">A scuffle between two Nazca Boobies</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img  src='https://picsum.photos/200/103' alt="otovalo waterfall"/>
+    <div class="text">A waterfall discovered on a hike in Otovalo</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img  src='https://picsum.photos/200/104' alt="pelican"/>
+    <div class="text">Pelican</div>
+  </div>
+
+  </div>
+
+
+  <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+  <a class="next" onclick='plusSlides(1)'>&#10095;</a>
 </div>
+<br/>
+
+
+<div style='text-align: center;'>
+  <span class="dot" onclick='currentSlide(1)'></span>
+  <span class="dot" onclick='currentSlide(2)'></span>
+  <span class="dot" onclick='currentSlide(3)'></span>
+  <span class="dot" onclick='currentSlide(4)'></span>
+</div>
+
+</div>
+
 
 <footer>
     <div class="footer-social">
@@ -95,35 +126,5 @@
 	
 </footer>
 
-		
-</div>
 </body>
-    <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
 </html>
