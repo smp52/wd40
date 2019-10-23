@@ -117,6 +117,13 @@ body {
     margin:0px;
 }
 
+#container {
+    padding-bottom:568px;
+    display:block;
+    background-color: pink;
+}
+
+
 #home .module {
   background-image:url("https://s3.amazonaws.com/filestore.rescuegroups.org/8569/pictures/animals/14696/14696131/67543922_500x378.jpg");
   background-size: cover;
@@ -138,12 +145,6 @@ body {
     margin-right: 0px;
 }
 
-#container{
-    background-color: pink;
-}
-#container1{
-    background-color: pink;
-}
 
 .gally{
     background-color: pink;
@@ -193,14 +194,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#container {
-    padding-bottom:568px;
-    display:block;
-}
+
 
 footer {
     height: 80px;
     background-color: white;
+    display: none;
 }
 
 footer p {
@@ -270,7 +269,6 @@ ul {
 .gallery img:hover{
      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
 .image_container{
     margin-left: 12%;
     margin-top: 10%;
@@ -371,10 +369,6 @@ ul {
     padding-top: 50px;
 }
 
-#reserve img{
-    width:75%;
-}
-
 
    .button_blue {
 	font-family: 'OpenSansReg', sans-serif;
@@ -392,13 +386,65 @@ ul {
 	background-color: #414040;
 	border: 3px solid #414040;
 }
+.adonationform{
+    width: 45%;
+    float: left;
+    background-color: dimgrey;
+    margin-left: 3%;
+}
 
+
+.otherdonate #container{
+    width: 45%;
+    float: right;
+    /*background-color: aqua;*/
+    margin-right: 3%;
+    padding: 2%;
+    position: relative;
+}
+
+.amazon img{
+    width: 100%;
+   /* background-color: yellow;*/
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.amazon img:hover{
+    transform: none;
+}
+
+.otherdonate h2{
+    /*background-color: forestgreen;*/
+    padding-top: 0px;
+}
+
+.otherdonate .donateimgz{
+    background-color: dodgerblue;
+    width: 170px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 0%;
+    display: inline-flex;
+    padding: none;
+
+}
 input {
     margin-left: auto;
     margin-right: auto;
     outline: none;
     padding:10px;
     width: 50%;
+    border-radius: 7px;
+    font-family: 'OpenSansReg', sans-serif;
+    font-size: 1em;
+}
+.donatepage input[type="datalist"] {
+    margin-left: 17.5%;
+    outline: none;
+    padding:10px;
+    width: 20%;
     border-radius: 7px;
     font-family: 'OpenSansReg', sans-serif;
     font-size: 1em;
@@ -414,4 +460,8 @@ input[type="textarea"] {
 
 .text input{
     padding-bottom: 60px;
+}
+
+.otherdonation{
+    overflow: visible;
 }
