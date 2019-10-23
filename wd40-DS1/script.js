@@ -1,3 +1,9 @@
+$(document).ready(function() {
+		    $('#login').click(function(e) {
+		      alert(1);
+		    });
+		});
+
 var slideIndex = 1;
 
 var myTimer;
