@@ -23,7 +23,6 @@ window.addEventListener("load",function() {
     slideshowContainer.addEventListener('mouseenter', pause)
     slideshowContainer.addEventListener('mouseleave', resume)
 })
-
 // NEXT AND PREVIOUS CONTROL
 function plusSlides(n){
   clearInterval(myTimer);
