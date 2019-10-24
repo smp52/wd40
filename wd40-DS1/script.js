@@ -3,6 +3,7 @@ $(document).ready(function() {
 		      alert(1);
 		    });
 		});
+
 var slideIndex = 1;
 
 var myTimer;
