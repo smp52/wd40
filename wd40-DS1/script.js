@@ -1,6 +1,34 @@
+
 $(document).ready(function() {
-		    $('#login').click(function(e) {
-		      alert(1);
+$('#yikes').click(function(e) {
+    window.location.href = 'account.html';
+		    });
+		});
+
+$(document).ready(function() {
+$('#login').click(function(e) {
+var y = document.getElementById('login');
+var x = document.getElementById("signin");
+  if (x.style.display === "none" && x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+  } else {
+    x.style.display = "block";
+    y.style.display = "none";
+  }
+		    });
+		});
+$(document).ready(function() {
+$('#signin').click(function(e) {
+var y = document.getElementById('login');
+var x = document.getElementById("signin");
+  if (x.style.display === "block" && x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
 		    });
 		});
 

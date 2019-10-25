@@ -2,29 +2,43 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>The Paddling Center | at Shingle Creek</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
-
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 </head>
 <body class="donatepage">
 
   <div id="page-wrap">
 	<div class="header">
+		<div class="accountman" id="login"></div>
+        <div class="accountman pure-u-1-1" id="signin">
+        <form class="form" id="form1">
+
+          <p class="username pure-u-2-5">
+            <input name="username" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="username" id="username" /></p>
+            <p class="password pure-u-2-5"><input name="password" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="password" id="password" />
+            </p>
+            <input type="button" class="button_blue pure-u-1-5" id="yikes" value="Login">
+            </form>
+        </div>
+
         <div id="logo">
             <a href="home.html"><img id="logoimage" src="images/logo2x.png" alt="Logo"></a>
         </div>
 				<nav>
             <ul class="nav-bar">
                 <li ><a href="adopt.html">Adopt</a></li>
-                <li><a href="donate.html">Donate</a></li>
+                <li><a href="donate.html" class="activeNav">Donate</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="cats.html">Cats</a></li>
                 <li><a href="events.html">events</a></li>
                 <li><a href="home.html">Home</a></li>
             </ul>
-                <div class="login"></div>
         </nav>
 
    </div>
@@ -173,17 +187,19 @@ for (var i = 0; i < btns.length; i++) {
 
 
 <footer>
-    <div class="footer-social">
+    <div class="footer-social pure-u-1-5" >
         <ul>
             <li><a href="http://www.facebook.com"><img src='images/facebook-dark.png' /></a></li>
             <li><a href="http://www.twitter.com"><img src='images/twitter-dark.png' /></a></li>
-            <li><a href="http://www.youtube.com"><img src='images/instagram-dark.png' /></a></li>
-            <li><a href="http://www.youtube.com"><img src='images/tripadvisor-dark.png' /></a></li>
+            <li><a  href="http://www.instagram.com"><img src='images/instagram-dark.png' /></a></li>
         </ul>
     </div>
-    <p>This site is not official and is an assignment for a UCF Digital Media course | Copyright 2015 Catapalooza</p>
+    <div class="pure-u-2-5">
+    <h3>This site is not official and is an assignment for a UCF Digital Media course | Copyright 2019 Catapalooza</h3></div>
+    <div class="pure-u-1-5"><h3>Contact</h3></div>
 
 </footer>
+
 
 
 </body>
