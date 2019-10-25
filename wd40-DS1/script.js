@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
 $('#yikes').click(function(e) {
     window.location.href = 'account.html';
@@ -90,13 +91,13 @@ function showSlides(n){
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
+};
 
 pause = () => {
   clearInterval(myTimer);
-}
+};
 
 resume = () =>{
   clearInterval(myTimer);
   myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}
+};
