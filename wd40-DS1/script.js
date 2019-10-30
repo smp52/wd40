@@ -1,3 +1,35 @@
+$(document).ready(function() {
+$('#newFilter').click(function(e) {
+var y = document.getElementById('newFilter');
+var x = document.getElementById("checkFilter");
+  if (x.style.display === "none" && x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+  } else {
+    x.style.display = "block";
+    y.style.display = "none";
+  }
+		    });
+		});
+$(document).ready(function() {
+$('#checkFilter').click(function(e) {
+var y = document.getElementById('newFilter');
+var x = document.getElementById("checkFilter");
+  if (x.style.display === "block" && x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
+		    });
+		});
+
+$(document).ready(function() {
+$('#backcat').click(function(e) {
+    window.location.href = 'cats.html';
+		    });
+		});
 
 $(document).ready(function() {
 $('#yikes').click(function(e) {
@@ -90,13 +122,13 @@ function showSlides(n){
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
+};
 
 pause = () => {
   clearInterval(myTimer);
-}
+};
 
 resume = () =>{
   clearInterval(myTimer);
   myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}
+};

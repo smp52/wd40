@@ -17,7 +17,7 @@ sub { vertical-align: text-bottom; }
 
 
 #logo {
-    width: 20%;
+    width: 40%;
     height: 100%;
 	margin:auto;
 	padding-top: 1%;
@@ -92,7 +92,7 @@ nav .activeNav{
     display: none;
     margin-top: 0px;
     width: 300px;
-    background-color: yellow;
+    background-color: ;
 }
 #signin .password, #signin .username, #signin button{
     display: inline-flex;
@@ -168,13 +168,6 @@ body {
     margin:0px;
 }
 
-#container {
-    padding-bottom:568px;
-    display:block;
-    background-color: ;
-}
-
-
 #home .module {
   background-image:url("https://s3.amazonaws.com/filestore.rescuegroups.org/8569/pictures/animals/14696/14696131/67543922_500x378.jpg");
   background-size: cover;
@@ -194,12 +187,6 @@ body {
     float: right;
     margin-top: 3.5%;
     margin-right: 0px;
-}
-
-
-.gally{
-    background-color: ;
-    height: 80vw;
 }
 
 .slideshow-container {
@@ -286,7 +273,7 @@ body {
 }
 
 #about .module {
-  background-image:url("../images/paddler.jpg");
+  background-image:url("https://picsum.photos/1000/500");
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -296,7 +283,7 @@ body {
 }
 
 #offerings .module {
-  background-image:url("../images/paddler.jpg");
+  background-image:url("https://picsum.photos/1000/500");
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -318,15 +305,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.numbers{
-    background-color: ;
-    height: 12px;
-    position: relative;
-    bottom: 0;
-    width: 1px;
-    margin: 0 auto;
 }
 
 footer {
@@ -390,6 +368,9 @@ ul {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    height: 220vh;
+    margin-bottom: 1%;
+    background-color: ;
 }
 
 .gallery img{
@@ -402,17 +383,30 @@ ul {
      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .image_container{
-    margin-left: 12%;
-    margin-top: 10%;
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    width: 100%;
+    height: 40%;
 }
 
 .filterDiv {
   float: left;
   width: 200px;
-  line-height: 100px;
+  height: 150px;
   text-align: center;
-  margin: 2px;
-  display: none;
+  position: relative;
+  padding: 1%;
+  background-color: ;
+}
+
+.numbers{
+}
+.numbers h2{
+    text-align: center;
+    vertical-align: text-top;
+    padding: 0px 0px 0px 0px;
 }
 
 .show {
@@ -504,9 +498,9 @@ ul {
 
 
 #signin .button_blue {
-	border: 1px solid #12766D;
+	border: 1px solid #FFA36B;
 	padding: 6px;
-	background-color: #12766D;
+	background-color: #FFA36B;
 	font: #fff;
 	text-decoration: none;
 	color: #fff;
@@ -516,12 +510,12 @@ ul {
    .button_blue {
 	font-family: 'OpenSansReg', sans-serif;
 	border-radius: 7px;
-	border: 3px solid #12766D;
+	border: 3px solid #FFA36B;
 	padding: 10px 20px;
-	background-color: #12766D;
-	font: #fff;
+	background-color: #FFA36B;
+	font: #000;
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	font-size: 1em;
     position: relative;
     margin: auto;
@@ -529,8 +523,9 @@ ul {
 
 
 .button_blue:hover {
-	background-color: #414040;
-	border: 3px solid #414040;
+	background-color: #603960;
+	border: 3px solid #603960;
+    color: #FFA36B;
 }
 
 
@@ -541,7 +536,7 @@ ul {
 .adonationform{
     width: 45%;
     float: left;
-    background-color: dimgrey;
+    background-color: ;
     margin-left: 3%;
 }
 
@@ -573,7 +568,7 @@ ul {
 }
 
 .otherdonate .donateimgz{
-    background-color: dodgerblue;
+    background-color: ;
     float: left;
     margin-left: 0%;
     margin-top: 0%;
@@ -582,7 +577,7 @@ ul {
 }
 
 .otherdonate #container{
-    background-color: yellowgreen;
+    background-color: ;
     overflow: hidden;
     margin-bottom: 0px;
     height: auto;
@@ -633,4 +628,150 @@ input[type="textarea"] {
 
 .otherdonation{
     overflow: visible;
+}
+
+.accountarea{
+    width: 80vw;
+    height: 90vh;
+    position: relative;
+    background-color: #FFA36B;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+}
+
+.section1{
+    width: 10%;
+    height: 100%;
+    background-color:;
+    position: relative;
+    text-align: center;
+}
+.section1 img{
+    width: 70%;
+    height: 30%;
+    position: relative;
+    margin-top: 6%;
+}
+.section1 h3{
+    text-align: center;
+
+}
+.section4{
+    height: 10%;
+    height: 100%;
+    background-color:;
+}
+.section6{
+    height: 10%;
+    height: 100%;
+    background-color:;
+}
+
+.collapsible {
+  background-color: #603960;
+  color: #FFA36B;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  color: #FFA36B;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #FCF2CF;
+  border: 1px solid black;
+}
+
+.metatagz{
+    text-align: center;
+    background-color: grey;
+    width: 30%;
+    height: 5%;
+    margin: 1%;
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    display: inline-flex;
+    padding: 1px;
+}
+
+.metatagz p{
+    color: #fff;
+    text-align: center;
+}
+
+.smol{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: 3%;
+    background-color: ;
+}
+.smol img{
+    display: inline-flex;
+    width: 23%;
+    margin: auto;
+    margin-left: 1%;
+}
+
+.section12{
+    width: 10%;
+    height: 100%;
+    background-color:;
+    position: relative;
+    text-align: center;
+}
+.section12 h3{
+    text-align: center;
+
+}
+
+
+.metatagz1{
+    text-align: center;
+    background-color: grey;
+    width: 10%;
+    height: 5%;
+    margin: 1%;
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    display: inline-flex;
+    padding: 1px;
+}
+
+.metatagz1 p{
+    color: #fff;
+    text-align: center;
+}
+
+.checkFilter{
+    margin: auto;
+    text-align: left;
+    width: 30%;
+    height: 40%;
+    background-color: grey;
+    display: none;
+}
+
+#cats h1{
+    font-size: 150px;
+    margin-bottom: 0%;
+    background-color: ;
+}
+
+#cats .filters h2{
+    padding-top: 0%;
+    background-color: ;
 }

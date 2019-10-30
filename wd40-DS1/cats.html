@@ -11,7 +11,7 @@
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 </head>
-<body>
+<body id="cats">
 
   <div id="page-wrap">
 	<div class="header">
@@ -28,7 +28,7 @@
         </div>
 
         <div id="logo">
-            <a href="home.html"><img id="logoimage" src="images/logo2x.png" alt="Logo"></a>
+            <a href="home.html"><img id="logoimage" src="images/logo.JPG" alt="Logo"></a>
         </div>
 				<nav>
            <ul class="nav-bar">
@@ -47,45 +47,75 @@
     <div id="container" class="gally">
          <div class="gallery">
            <h1>Cats</h1>
-             <h2>Filter DIV Elements</h2>
+             <div class="filters">
+             <h2>Filters:</h2>
+        <div class="section12 pure-u-1-1">
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
+        <a href=""><div class="metatagz1"><p>&times; tag</p></div></a>
 
-<div id="myBtnContainer">
+        <div class="newFilter" id="newFilter">
+        <div class="metatagz1"><p>New Filter</p></div>
+        </div>
+
+        <div class="checkFilter" id="checkFilter">
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br>
+        <hr>
+        <input type="radio" name="age" value="30"> 0 - 30<br>
+        <input type="radio" name="age" value="60"> 31 - 60<br>
+        <input type="radio" name="age" value="100"> 61 - 100<br>
+            <hr>
+        </div>
+
+        </div>
+                 </div>
+<!--<div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <input type="checkbox" class="radio" value="1" onclick="filterSelection('cars')"> Cars<br>
   <input type="checkbox" class="radio" value="1" onclick="filterSelection('animals')"> Animals<br>
   <input type="checkbox" class="radio" value="1" onclick="filterSelection('fruits')"> Fruits<br>
   <input type="checkbox" class="radio" value="1" onclick="filterSelection('colors')"> Colors<br>
-</div>
+</div>-->
 
-<div class="image_container">
+<div class="image_container pure-u-1-1">
 
                <div class="image_row1">
-                  <div class="filterDiv cars"> <img src="images/P4120074.jpg" alt="Paddling Center Image"></div>
-                   <div class="filterDiv colors fruits"> <img src="images/P4120076.jpg" alt="Paddling Center Image"></div>
-                   <div class="filterDiv cars animals"><img src="images/P4120078.jpg" alt="Paddling Center Image"></div>
+                  <div class="filterDiv cars"> <a href="catprofile.html"><img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                   <div class="filterDiv colors fruits"> <a href="catprofile.html"><img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                   <div class="filterDiv cars animals"><a href="catprofile.html"><img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
                </div>
 
                <div class="image_row2">
-                  <div class="filterDiv cars"> <img src="images/P4120077.jpg" alt="Paddling Center Image"></div>
-                   <div class="filterDiv colors fruits"> <img src="images/P4120079.jpg" alt="Paddling Center Image"></div>
-                   <div class="filterDiv cars animals"><img src="images/canoe.jpg" alt="Paddling Center Image"></div>
+                  <div class="filterDiv cars"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                   <div class="filterDiv colors fruits"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                   <div class="filterDiv cars animals"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
                </div>
 
                <div class="image_row3">
-                  <div class="filterDiv cars"> <img src="images/P4120085.jpg" alt="Paddling Center Image"></div>
-                    <div class="filterDiv colors fruits"><img src="images/2.jpg" alt="Paddling Center Image"></div>
-                  <div class="filterDiv cars animals"> <img src="images/P4120094.jpg" alt="Paddling Center Image"></div>
+                  <div class="filterDiv cars"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                    <div class="filterDiv colors fruits"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                  <div class="filterDiv cars animals"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
                </div>
 
                 <div class="image_row4">
-                  <div class="filterDiv cars"> <img src="images/P4120085.jpg" alt="Paddling Center Image"></div>
-                    <div class="filterDiv colors fruits"><img src="images/2.jpg" alt="Paddling Center Image"></div>
-                  <div class="filterDiv cars animals"> <img src="images/P4120094.jpg" alt="Paddling Center Image"></div>
+                  <div class="filterDiv cars"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                    <div class="filterDiv colors fruits"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
+                        <div class="filterDiv cars animals"> <a href="catprofile.html"> <img src="https://picsum.photos/200/150" alt="Paddling Center Image"></a></div>
                </div>
-    <div class="numbers">
-<a href="" style="float: none;position: relative;"><h2>1,2,3,4,5,6</h2></a>
+   <div class="numbers">
+<h2><a href="">1,2,3,4,5,6</a></h2>
             </div>
 </div>
+
         </div>
 
         </div>
