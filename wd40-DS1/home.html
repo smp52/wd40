@@ -8,8 +8,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="script.js"></script>
+    
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="1088328654162-ruur1fggvu0hil4514qc77kerac10pka.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body id="home">
 
@@ -17,6 +21,9 @@
 	<div class="header">
 		<div class="accountman" id="login"></div>
         <div class="accountman pure-u-1-1" id="signin">
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+         <a href="#" onclick="signOut();">Sign out</a>
+            
         <form class="form" id="form1">
 
           <p class="username pure-u-2-5">
@@ -26,11 +33,13 @@
             <input type="button" class="button_blue pure-u-1-5" id="yikes" value="Login">
             </form>
         </div>
+        
         <div id="logo">
-            <a href="home.html"><img id="logoimage" src="images/logo2x.png" alt="Logo"></a>
+                        <a href="home.html"><img id="logoimage" src="images/logo.JPG" alt="Logo"></a>
+
         </div>
-				<nav>
-            <ul class="nav-bar">
+				<nav class="pure-u-lg-1-1 pure-u-md-1-1 pure-u-sm-1-1">
+            <ul class="nav-bar pure-u-1-1">
                 <li><a href="home.html" class="activeNav">Home</a></li>
                 <li ><a href="adopt.html" >Adopt</a></li>
                 <li><a href="cats.html">Cats</a></li>
@@ -44,15 +53,15 @@
    </div>
 
 
-  <div id="container">
+  <div id="container pure-u-lg-1-1 pure-u-md-1-1 pure-u-sm-1-1">
 
 
-        <div class="module mid">
-            <h1></h1>
+        <div class="module mid pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+            <img src="https://s3.amazonaws.com/filestore.rescuegroups.org/8569/pictures/animals/14696/14696131/67543922_500x378.jpg" alt="dobby">
         </div>
 
-       <div id="contentsection1">
-		<div id="adoptSection">
+       <div id="contentsection1 pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+		<div id="adoptSection pure-u-1-1">
             <h2>Adopt Today</h2>
             <p>Lorem ipsum dolor amet skateboard seitan bespoke, leggings cornhole microdosing semiotics.
 							Truffaut banh mi blog, bushwick irony four loko edison bulb flannel brunch af church-key mixtape.
@@ -88,25 +97,25 @@
   <div class="mySlides fade">
 
     <img  src='https://picsum.photos/200/100' alt="sally lightfoot crab"/>
-    <div class="text">Sally Lightfoot Crab</div>
+    <div class="text">Cat 1</div>
   </div>
 
   <div class="mySlides fade">
 
     <img  src='https://picsum.photos/200/102' alt="fighting nazca boobies"/>
-    <div class="text">A scuffle between two Nazca Boobies</div>
+    <div class="text">Cat 2</div>
   </div>
 
   <div class="mySlides fade">
 
     <img  src='https://picsum.photos/200/103' alt="otovalo waterfall"/>
-    <div class="text">A waterfall discovered on a hike in Otovalo</div>
+    <div class="text">Cat 3</div>
   </div>
 
   <div class="mySlides fade">
 
     <img  src='https://picsum.photos/200/104' alt="pelican"/>
-    <div class="text">Pelican</div>
+    <div class="text">Cat 4</div>
   </div>
 
   </div>
@@ -142,5 +151,28 @@
 
 </footer>
 
+    
+<script>
+function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+}
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  } 
+</script>
 </body>
 </html>
